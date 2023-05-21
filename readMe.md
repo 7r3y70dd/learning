@@ -7,6 +7,8 @@ Workspace for learning projects
 % git status
 # workspace status
 % git branch
+# add commit push
+%  git add .; git commit -m '[comment]'; git push
 ```
 ### [git flow](https://danielkummer.github.io/git-flow-cheatsheet/)
 ```shell
