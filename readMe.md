@@ -4,7 +4,7 @@ Workspace for learning projects
 ## [git](https://phoenixnap.com/kb/how-to-use-git)
 
 ```shell
-tbd
+% git status
 ```
 
 ## [homebrew](https://brew.sh)
