@@ -25,3 +25,4 @@ Workspace for learning projects
 ## [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
 ## [intelliJ](https://www.jetbrains.com/idea/)
 ## [zsh](https://ohmyz.sh)
+## [kubernetes](https://kubernetes.io)
