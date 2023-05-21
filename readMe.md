@@ -8,7 +8,10 @@ Workspace for learning projects
 # workspace status
 % git branch
 ```
-
+### [git flow](https://danielkummer.github.io/git-flow-cheatsheet/)
+```shell
+% git flow init
+```
 ## [homebrew](https://brew.sh)
 ### bootstrap
 ```shell
