@@ -5,6 +5,8 @@ Workspace for learning projects
 
 ```shell
 % git status
+# workspace status
+% git branch
 ```
 
 ## [homebrew](https://brew.sh)
