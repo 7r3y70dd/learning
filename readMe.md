@@ -23,4 +23,5 @@ Workspace for learning projects
 ## [Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 ## [Spring](https://spring.io)
 ## [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
-## [intelliJ]()
+## [intelliJ](https://www.jetbrains.com/idea/)
+## [zsh](https://ohmyz.sh)
