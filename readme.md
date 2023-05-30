@@ -115,6 +115,7 @@ Workspace for learning projects
 % mkdir -p ~/.kube
 % microk8s config > ~/.kube/config
 % chmod 600 ~/.kube/config
+% aliase kubectl="microk8s kubectl"
 % kubectl version
 % kubectl get all -A
 % kubectl api-versions
