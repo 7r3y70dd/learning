@@ -7,6 +7,7 @@ Workspace for learning projects
 % git status
 # workspace status
 % git branch
+% git status
 % git add .; git commit -m 'sync'; git push
 ```
 
