@@ -89,6 +89,8 @@ Workspace for learning projects
 ## (postgresql)[]
 
 - [tutorial]()
+- [pgcli]()
+- [dbeaver]()
 
 ## shell
 
@@ -132,4 +134,24 @@ Workspace for learning projects
 % multipass purge 
 % brew uninstall --zap multipass
 % brew uninstall --zap microk8s
+```
+
+```shell
+% kubectl port-forward --namespace default svc/postgresql 5432:5432 &
+% nc -z localhost 5342
+Connection to localhost port 5432 [tcp/postgresql] succeeded!
+% kubectl get secret --namespace default postgresql -o jsonpath="{.data.postgres-password}" | base64 -d
+```
+
+```pgcli
+% pgcli -h localhost -p 5432 -U postgres
+Password for postgres:
+Server: PostgreSQL 15.3
+Version: 3.5.0
+Home: http://pgcli.com
+postgres@localhost:postgres>
+...
+postgres@localhost:postgres> select now()
+...
+postgres@localhost:postgres> quit
 ```
