@@ -50,10 +50,12 @@ Workspace for learning projects
 ```shell
 % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 % xcode-select --install
-% brew init
+\% brew doctor
 % brew upgrade
+% brew init
 % brew dump
 % brew install -f Brewfile
+% brew doctor
 ```
 
 ## [markdown](https://www.markdownguide.org/cheat-sheet/)
@@ -81,3 +83,37 @@ Workspace for learning projects
 ### [kafka](https://aws.amazon.com/msk/)
 
 ### [localstack](https://localstack.cloud) : fully functional local aws
+
+## (postgresql)[]
+
+- [tutorial]()
+
+## shell
+
+- [zsh]()
+- [nc]()
+
+```shell
+% nc -z localhost [port]
+```
+## [kubernetes]()
+
+- [microk8s]()
+- [k9s]()
+- [helm]()
+
+```shell
+% brew install ubuntu/microk8s/microk8s
+% microk8s install --cpu 8 --mem 10 --disk 100
+% microk8s status
+% microk8s enable dns storage
+% mkdir -p ~/.kube
+% microk8s config > ~/.kube/config
+% chmod 600 ~/.kube/config
+% kubectl version
+% kubectl get all -A
+% kubectl api-versions
+% k9s
+% brew install helm
+% helm install postgresql oci://registry-1.docker.io/bitnamicharts/postgresql
+```
