@@ -3,38 +3,7 @@ Workspace for learning projects
 
 ## [git](https://phoenixnap.com/kb/how-to-use-git)
 
-```shell
-% git status
-# workspace status
-% git branch
-% git status
-% git add .; git commit -m 'sync'; git push
-```
-
-## [homebrew](https://brew.sh)
-### bootstrap
-```shell
-% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-% xcode-select --install
-% brew init
-% brew upgrade
-% brew dump
-% brew install -f Brewfile
-```
-## [markdown](https://www.markdownguide.org/cheat-sheet/)
-
-## [Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-
-## [Spring](https://spring.io)
-
-## [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
-
-## [intelliJ]()
-
-# Overview
-Workspace for learning projects
-
-## [git](https://phoenixnap.com/kb/how-to-use-git)
+- [git flow](https://danielkummer.github.io/git-flow-cheatsheet/)
 
 ```shell
 % git status
@@ -44,25 +13,37 @@ Workspace for learning projects
 %  git add .; git commit -m '[comment]'; git push
 ```
 
-### [git flow](https://danielkummer.github.io/git-flow-cheatsheet/)
-
 ```shell
 % git flow init
 ```
 
 ## [homebrew](https://brew.sh)
 
-### bootstrap
+- [brew bundle](https://github.com/Homebrew/homebrew-bundle)
+- bootstrap
+
 ```shell
 % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 % xcode-select --install
-\% brew doctor
+% brew doctor
 % brew upgrade
 % brew init
 % brew dump
 % brew install -f Brewfile
 % brew doctor
 ```
+
+## [markdown](https://www.markdownguide.org/cheat-sheet/)
+
+## [Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+
+## [Spring](https://spring.io)
+- [spring web]()
+- [spring data]()
+
+## [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
+
+## [intelliJ]()
 
 ## [markdown](https://www.markdownguide.org/cheat-sheet/)
 
@@ -78,35 +59,35 @@ Workspace for learning projects
 
 ## [aws](https://aws.amazon.com)
 
-### [rds/postgresql](https://aws.amazon.com/rds/postgresql) : Relational Data Service
-
-### [redis](https://aws.amazon.com/redis/) : Remote Dictionary Service
-
-### [s3](https://aws.amazon.com/s3/) : Simple Storage Service
-
-### [kafka](https://aws.amazon.com/msk/)
-
-### [localstack](https://localstack.cloud) : fully functional local aws
+- [rds/postgresql](https://aws.amazon.com/rds/postgresql) : Relational Data Service
+- [redis](https://aws.amazon.com/redis/) : Remote Dictionary Service
+- [s3](https://aws.amazon.com/s3/) : Simple Storage Service
+- [kafka](https://aws.amazon.com/msk/)
+- [localstack](https://localstack.cloud) : fully functional local aws
 
 ## (postgresql)[]
 
-- [tutorial]()
-- [pgcli]()
-- [dbeaver]()
+- [tutorial](https://www.postgresqltutorial.com)
+- [pgcli](https://www.pgcli.com)
+- [dbeaver](https://dbeaver.io)
 
 ## shell
 
 - [zsh](https://ohmyz.sh)
-- [nc]()
+- [nc](https://linuxize.com/post/netcat-nc-command-with-examples/)
 
 ```shell
 % nc -z localhost [port]
 ```
-## [kubernetes]()
 
-- [microk8s]()
-- [k9s]()
-- [helm]()
+## [kubernetes](https://artifacthub.io/packages/helm/bitnami/postgresql)
+
+- [microk8s](https://microk8s.io)
+  - [multipass](https://multipass.run)
+- [k9s](https://k9scli.io)
+- [helm](https://helm.sh)
+  - [helm hub](https://artifacthub.io)
+    - [bitnami postgresql](https://artifacthub.io/packages/helm/bitnami/postgresql)
 
 ```shell
 % brew install ubuntu/microk8s/microk8s
