@@ -20,9 +20,13 @@ Workspace for learning projects
 % brew install -f Brewfile
 ```
 ## [markdown](https://www.markdownguide.org/cheat-sheet/)
+
 ## [Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+
 ## [Spring](https://spring.io)
+
 ## [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
+
 ## [intelliJ]()
 
 # Overview
@@ -104,9 +108,10 @@ Workspace for learning projects
 % brew install ubuntu/microk8s/microk8s
 % brew reinstall python
 % microk8s install --cpu 6 --mem 10 --disk 100
-% multipass set local.driver=qemu
-% microk8s enable dns hostpath-storage
+% microk8s status --wait-ready
+% multipass set local.driver=qemfu
 % microk8s start
+% microk8s enable dns hostpath-storage
 % mkdir -p ~/.kube
 % microk8s config > ~/.kube/config
 % chmod 600 ~/.kube/config
