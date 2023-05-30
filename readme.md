@@ -68,8 +68,6 @@ Workspace for learning projects
 
 ## [intelliJ](https://www.jetbrains.com/idea/)
 
-## [zsh](https://ohmyz.sh)
-
 ## [kubernetes](https://kubernetes.io)
 
 ## [aws](https://aws.amazon.com)
@@ -90,7 +88,7 @@ Workspace for learning projects
 
 ## shell
 
-- [zsh]()
+- [zsh](https://ohmyz.sh)
 - [nc]()
 
 ```shell
@@ -104,9 +102,11 @@ Workspace for learning projects
 
 ```shell
 % brew install ubuntu/microk8s/microk8s
-% microk8s install --cpu 8 --mem 10 --disk 100
-% microk8s status
-% microk8s enable dns storage
+% brew reinstall python
+% microk8s install --cpu 6 --mem 10 --disk 100
+% multipass set local.driver=qemu
+% microk8s enable dns hostpath-storage
+% microk8s start
 % mkdir -p ~/.kube
 % microk8s config > ~/.kube/config
 % chmod 600 ~/.kube/config
@@ -115,5 +115,15 @@ Workspace for learning projects
 % kubectl api-versions
 % k9s
 % brew install helm
+% helm list
 % helm install postgresql oci://registry-1.docker.io/bitnamicharts/postgresql
+...
+% helm delete postgresql
+...
+% microk8s stop
+% multipass list
+% multipass delete microk8s-vm 
+% multipass purge 
+% brew uninstall --zap multipass
+% brew uninstall --zap microk8s
 ```
