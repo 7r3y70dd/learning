@@ -94,7 +94,7 @@ Workspace for learning projects
 % brew reinstall python
 % microk8s install --cpu 6 --mem 10 --disk 100
 % microk8s status --wait-ready
-% multipass set local.driver=qemfu
+% multipass set local.driver=qemu
 % microk8s start
 % microk8s enable dns hostpath-storage
 % mkdir -p ~/.kube
@@ -107,16 +107,17 @@ Workspace for learning projects
 % k9s
 % brew install helm
 % helm list
-% helm install postgresql oci://registry-1.docker.io/bitnamicharts/postgresql
+% helm install postgresql --set auth.postgresPassword=pgpwd oci://registry-1.docker.io/bitnamicharts/postgresql
 ...
+# cleanup
 % helm delete postgresql
-...
 % microk8s stop
 % multipass list
 % multipass delete microk8s-vm 
 % multipass purge 
 % brew uninstall --zap multipass
 % brew uninstall --zap microk8s
+% kubectl delete pvc -l release=my-release
 ```
 
 ```shell
