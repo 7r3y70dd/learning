@@ -5,8 +5,6 @@ import com.example.starterApp.repository.FilmRepository;
 import com.example.starterApp.service.FilmService;
 import org.springframework.stereotype.Component;
 
-import java.util.Optional;
-
 @Component
 public class FilmServiceImpl implements FilmService {
 
@@ -17,7 +15,7 @@ public class FilmServiceImpl implements FilmService {
     }
 
     @Override
-    public Optional<Film> getByTitle(String title) {
-        return filmRepository.findById(1);
+    public Film getByTitle(String title) {
+        return filmRepository.getByTitle(title);
     }
 }
