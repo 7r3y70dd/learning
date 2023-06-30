@@ -27,7 +27,11 @@ public class HelloController {
 
         log.info("got index; message={}", message);
 
-        Film film = filmService.getByTitle("Academy Dinosaur");
+        Film post = new Film("postTitle", 120, 1);
+
+        filmService.create(post);
+
+        Film film = filmService.getByTitle("postTitle");
 
         System.out.println("film: " + film.getTitle());
 

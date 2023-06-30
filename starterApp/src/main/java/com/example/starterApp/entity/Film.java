@@ -7,6 +7,11 @@ import lombok.Getter;
 @Entity
 @Table(name = "film")
 public class Film {
+    public Film(String title, Integer length, Integer language_id){
+        this.title = title;
+        this.length = length;
+        this.language_id = language_id;
+    }
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -17,4 +22,7 @@ public class Film {
 
     @Column(name="length")
     private Integer length;
+
+    @Column(name="language_id")
+    private Integer language_id;
 }
