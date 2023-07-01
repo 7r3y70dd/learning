@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
+
 @Component
 public class FilmServiceImpl implements FilmService {
 
@@ -21,8 +23,18 @@ public class FilmServiceImpl implements FilmService {
         return filmRepository.getByTitle(title);
     }
 
+    @Override
+    public Film getByTitleIgnoreCase(String title){
+        return filmRepository.getByTitleIgnoreCase(title);
+    }
+
+    public List<Film> getByKeyword(String keyword){
+        return filmRepository.getByTitleContainingIgnoreCase(keyword);
+    }
+
     @PostMapping
     public Film create(@RequestBody Film film){
         return filmRepository.save(film);
     }
+
 }
