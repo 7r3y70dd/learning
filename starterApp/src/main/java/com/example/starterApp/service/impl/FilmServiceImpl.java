@@ -18,6 +18,12 @@ public class FilmServiceImpl implements FilmService {
         this.filmRepository = filmRepository;
     }
 
+
+    @Override
+    public Integer getIdByTitle(String title) {
+        return filmRepository.getIdByTitle(title);
+    }
+
     @Override
     public Film getByTitle(String title) {
         return filmRepository.getByTitle(title);
