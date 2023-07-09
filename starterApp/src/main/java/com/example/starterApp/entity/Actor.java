@@ -3,7 +3,9 @@ package com.example.starterApp.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
-
+@Data
+@Entity
+@Table(name="actor")
 public class Actor {
 
     @Id
@@ -16,6 +18,11 @@ public class Actor {
     @Column(name="last_name", length=255)
     private String last_name;
 
-    @Column(name="title", length=255)
-    private String title;
+    public String getFirstName() {
+        return first_name;
+    }
+
+    public String getLastName() {
+        return last_name;
+    }
 }

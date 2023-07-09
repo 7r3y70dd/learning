@@ -11,9 +11,8 @@ public class FilmActor {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int film_id;
+    private int filmId;
 
-    @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int actor_id;
+    @Column(name="actor_id", length=255)
+    private Integer actor_id;
 }
