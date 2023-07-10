@@ -1,37 +1,47 @@
 package com.example.starterApp.entity;
 
+import com.example.starterApp.service.ActorService;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.ToString;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @Entity
 @Table(name = "film")
 @EqualsAndHashCode(callSuper = false)
+@Getter
+@ToString(exclude = "actors")
 public class Film {
 
-//    public Film(String title, Integer length, Integer language_id){
-//        this.title = title;
-//        this.length = length;
-//        this.language_id = language_id;
-//    }
-
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int film_id;
+    @Column(name = "film_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    @Column(name="title", length=255)
+    @Column(name = "title", length = 255)
     private String title;
 
-    @Column(name="length")
+    @Column(name = "length")
     private Integer length;
 
-    @Column(name="language_id")
-    private Integer language_id;
+    @Column(name = "language_id")
+    private Integer languageId;
 
-    @Column(name="description")
+    @Column(name = "description")
     private String description;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "film_actor",
+            joinColumns = {@JoinColumn(name = "film_id")},
+            inverseJoinColumns = {@JoinColumn(name = "actor_id")})
+    Set<Actor> actors = new HashSet<>();
+
 
 //    @Column(name="release_year")
 //    private Integer release_year;
